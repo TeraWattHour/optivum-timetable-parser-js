@@ -2,8 +2,8 @@ import { getDays, getLessonsMatrix, getRootTable } from "./helpers";
 import { parseStringToDocument } from "./parser";
 
 export class Table {
-  container: Document;
-  table: Element;
+  private container: Document;
+  private table: Element;
 
   constructor(file: string) {
     const document = parseStringToDocument(file);
@@ -11,11 +11,11 @@ export class Table {
     this.table = getRootTable(document.documentElement);
   }
 
-  get dayNames(): string[] {
+  public get dayNames(): string[] {
     return getDays(this.table);
   }
 
-  get hours(): IHour[] {
+  public get hours(): IHour[] {
     const indexes = Array.from(this.table.querySelectorAll("td.nr")).map((x) =>
       parseInt(x.textContent.trim())
     );
@@ -30,7 +30,7 @@ export class Table {
     }));
   }
 
-  get days(): IDayWithLessons[] {
+  public get days(): IDayWithLessons[] {
     const days = getDays(this.table);
     const lessons = getLessonsMatrix(this.table);
 
@@ -45,7 +45,7 @@ export class Table {
     return daysWithLessons;
   }
 
-  get name(): string {
+  public get name(): string {
     return this.container.querySelector(".tytulnapis")?.textContent.trim();
   }
 }

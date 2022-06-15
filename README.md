@@ -1,4 +1,4 @@
-## Wymagania
+## Prerequisites
 
 Node.js v14 or newer
 

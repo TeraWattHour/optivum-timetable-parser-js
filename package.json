@@ -1,6 +1,6 @@
 {
   "name": "optivum-timetable-parser",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Nieoficjalny parser planów lekcji wygenerowanych za pomocą programu Plan lekcji Optivum firmy Vulcan",
   "main": "dist/main.js",
   "scripts": {
