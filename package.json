@@ -4,16 +4,28 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "ts-node-dev --respawn main.ts"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/TeraWattHour/optivum-timetable-parser.git"
   },
+  "files": [
+    "./dist/*"
+  ],
   "author": "TeraWattHour",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/TeraWattHour/optivum-timetable-parser/issues"
   },
-  "homepage": "https://github.com/TeraWattHour/optivum-timetable-parser#readme"
+  "homepage": "https://github.com/TeraWattHour/optivum-timetable-parser#readme",
+  "devDependencies": {
+    "@types/jsdom": "^16.2.14",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.7.3"
+  },
+  "dependencies": {
+    "jsdom": "^19.0.0",
+    "node": "^17.7.2"
+  }
 }

@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "ES5",
+    "outDir": "./dist",
+    "rootDir": "./",
+    "downlevelIteration": true
+  },
+  "include": ["**/*.ts", "typings.d.ts"],
+  "exclude": ["node_modules"],
+  "ts-node": {
+    "files": true
+  },
+  "files": ["typings.d.ts"]
+}
