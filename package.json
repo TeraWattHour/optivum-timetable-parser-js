@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TeraWattHour/optivum-timetable-parser.git"
+    "url": "git+https://github.com/TeraWattHour/optivum-timetable-parser-js.git"
   },
   "files": [
     "/dist"
@@ -17,9 +17,9 @@
   "author": "TeraWattHour",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/TeraWattHour/optivum-timetable-parser/issues"
+    "url": "https://github.com/TeraWattHour/optivum-timetable-parser-js/issues"
   },
-  "homepage": "https://github.com/TeraWattHour/optivum-timetable-parser#readme",
+  "homepage": "https://github.com/TeraWattHour/optivum-timetable-parser-js#readme",
   "devDependencies": {
     "@types/jsdom": "^16.2.14",
     "typescript": "^4.7.3"
